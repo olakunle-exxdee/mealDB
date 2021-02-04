@@ -7,7 +7,7 @@ const Menu = () => {
   const { menu, loading, error } = useGlobalContext();
 
   if (menu.length < 1) {
-    return <p className="no">no meal found</p>;
+    return <h1 className="no">no meal found</h1>;
   }
   if (loading) {
     return <Loading />;
